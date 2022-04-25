@@ -9,12 +9,17 @@
   <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <style>
+    .colorgrey{
+      background-color: grey;
+    }
+  </style>
 </head>
 <body>
-  <nav class="menu">
-    <ul><a href="/">Back to Home</a></ul>
-  </nav>
-
+  <button id="button" style="margin-left: 20px; margin-top: 20px;">
+    Dark Mode
+</button>
   <main class="text-center">
     <form class="form-signin" method="post" action="signup">
       <div id="message">
@@ -22,7 +27,6 @@
       </div>
       <h1 class="h3 mb-3 font-weight-normal">Create a new account</h1>
       <input class="form-control" type="text" name="fullname" placeholder="Full Name" required autofocus>
-      <input class="form-control" type="text" name="prefer" placeholder="Preferred Name" required>
       <input class="form-control" type="text" name="username" placeholder="User name or email address" required>
       <input class="form-control" type="password" name="password" id="password" placeholder="Password" required>
 
@@ -32,7 +36,7 @@
       <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
 
       <div style="margin-top:15px ;border-top: 1px #888; padding-top:15px" >
-        Already have an account? <a href="login" >Sign In Here</a>
+        Already have an account? <a href="StartPage.html" >Return to Home Page</a>
       </div>
 
     </form>
@@ -41,5 +45,6 @@
   <!-- Load our React component. -->
   <script src="/javascripts/signup.js" type="text/babel"></script>
   <script src="/javascripts/showPassword.js"></script>
+  <script src ='/javascripts/ChangeMode.js'></script>
 </body>
 </html>
