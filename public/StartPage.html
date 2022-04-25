@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 
     <title>
         Home </title>
@@ -11,20 +12,47 @@
 
 
 <style>
-    body {
-        background-color: gray;
+    input, label{
+        display: block;
+    }
+    .colorgrey{
+        background-color: grey;
     }
 </style>
 
 <body>
-    <nav class="menu">
-        <li><a href="/users/login">Log in</a> | </li>
-        <li><a href="/users/signup">Sign up</a></li>
-        </ul>
-    </nav>
-    <h1>
-        Welcome to LoFi Project Manager!
-    </h1>
+    <div>
+        <button id="button" style="margin-left: 20px; margin-top: 20px;">
+            Dark Mode
+        </button>
+    </div>
+    <div style="position: absolute; right: 80px; bottom: 700px; font-size: 30pt;">
+        <pre>
+            Welcome to the 
+                <span style="color: rgb(223, 156, 33);"> LoFi</span>
+            Project Manager
+        </pre>
+    </div>
+    <div style="position:absolute; right: 150px; margin-left:20px; top: 700px;">
+        Never lose track of progress...
+    </div>
+    
+    <form name="LogIn" method="LogIn" style="position:absolute; left:80px; top: 800px;">
+        <div id ="message"></div>
+        <div style="float:left;margin-right:20px;">
+            <label for="Username">Username</label>
+            <input id="Username" type="text" value="" name="Username">
+          </div>
+          <br style="clear:both;" />
+        <div style="float:left;margin-right:20px;">
+            <label for="Password">Password</label>
+            <input id="Password" type="text" value="" name="Password">
+          </div>
+          <br style="clear:both;" />
+          <div>Don't have an account? <a href ='/signup.html'>Sign up here!></a></div>
+    </form>
+   
+    <script src="/javascripts/ChangeMode.js"></script>
 </body>
 
 </html>
