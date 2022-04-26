@@ -11,7 +11,10 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
   <style>
-    .colorgrey{
+    .colorwhite{
+      background-color: white;
+    }
+    body{
       background-color: grey;
     }
   </style>
@@ -20,15 +23,20 @@
   <button id="button" style="margin-left: 20px; margin-top: 20px;">
     Dark Mode
 </button>
+<div style="position: absolute; right: 80px; bottom: 600px; font-size: 100pt;">
+  <pre>
+          <span style="color: rgb(223, 156, 33);"> LoFi</span>
+  </pre>
+</div>
   <main class="text-center">
     <form class="form-signin" method="post" action="signup">
       <div id="message">
         <!-- This element's contents will be replaced with your component. -->
       </div>
       <h1 class="h3 mb-3 font-weight-normal">Create a new account</h1>
-      <input class="form-control" type="text" name="fullname" placeholder="Full Name" required autofocus>
-      <input class="form-control" type="text" name="username" placeholder="User name or email address" required>
-      <input class="form-control" type="password" name="password" id="password" placeholder="Password" required>
+      <input type="text" name="fullname" placeholder="Full Name" required autofocus><br>
+      <input type="text" name="username" placeholder="User name or email address" required><br>
+      <input type="password" name="password" id="password" placeholder="Password" required><br>
 
       <div class="checkbox mb-3">
         <label><input type="checkbox" onclick="showPassword()"> Show password</label>
